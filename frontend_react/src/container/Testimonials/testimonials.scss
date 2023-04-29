@@ -1,0 +1,139 @@
+.app__testimonials {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+  
+.app__testimonials-item {
+    width: 75%;
+    margin-top: 50px;
+    min-height: 510px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(3, 196, 255, 0.251);
+  
+    transition: all 0.8s ease-in-out;
+  
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  
+    @media screen and (min-width: 2000px) {
+      min-height: 510px;
+  
+      img {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  /*
+    @media screen and (max-width: 850px) {
+      width: 100%;
+    }
+  */
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+}
+  
+.app__testimonials-content {
+    flex: 1;
+    height: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    text-align: left;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  
+    p {
+      text-align: left;
+      font-size: 1.30rem;
+      font-weight: 400;
+      line-height: 2rem;
+      color: var(--lightblue-color);
+      font-family: var(--font-base);
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+    }
+  
+    h4 {
+      font-size: 1.70rem;
+      font-weight: 500;
+      text-align: left;
+      color: var(--lightblue-color);
+      margin-top: 2.5rem;
+      
+      @media screen and (min-width: 2000px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+  
+    h5 {
+      font-size: 1.10rem;
+      font-weight: 500;
+      text-align: left;
+      color: var(--primary-color);
+      margin-top: 15px;
+
+      @media screen and (min-width: 2000px) {
+        font-size: 1.5rem;
+        line-height: 1rem;
+      }
+    }
+  
+    @media screen and (max-width: 600px) {
+      margin-top: 2rem;
+      padding: 0;
+    }
+}
+  
+.app__testimonials-btns {
+    flex-direction: row;
+    margin-top: 1.5rem;
+  
+    div {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background-color: var(--white-color);
+  
+      margin: 1.5rem;
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 37px;
+        height: 37px;
+        color: var(--lightblue-color);
+      }
+  
+      &:hover {
+        background-color: var(--secondary-color);
+  
+        svg {
+          color: var(--white-color);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+  
+        svg {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+}
