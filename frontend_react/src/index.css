@@ -2,7 +2,7 @@
 
 :root {
     --font-base: "Maven pro", sans-serif;
-    --primary-color: #010101;
+    --primary-color: #010101 /* #fff */;
     --secondary-color: #0A537F;
     --black-color: #030303;
     --lightGray-color: #e4e4e4;

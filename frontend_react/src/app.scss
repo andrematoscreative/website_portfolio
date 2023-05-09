@@ -28,7 +28,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4.5rem ;
 
     @media screen and (max-width: 450px) {
       padding: 4rem 1rem 2rem;
@@ -51,12 +50,13 @@
 } */
 
 .head-text {
-    margin-bottom: 100px;
-    font-size: 40px;
-    font-weight: 700;
+    margin-bottom: 120px;
+    font-size: 3.5rem;
+    font-weight: 600;
     text-align: left;
     color: var(--lightblue-color);
     text-transform: capitalize;
+    user-select: none;
 /*
     span {
       color: var(--secondary-color);
@@ -107,8 +107,8 @@
     margin-left: 68px;
 
     div {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: var(--lightGray-color);
         margin: 0.5rem 0;

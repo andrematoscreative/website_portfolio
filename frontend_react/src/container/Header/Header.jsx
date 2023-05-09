@@ -5,6 +5,7 @@ import { images } from '../../constants';
 import header from './header.scss';
 
 const Header = () => {
+  
   return (
 
     <div className='app__header app__flex'>
@@ -12,31 +13,49 @@ const Header = () => {
       whileInView={{ x: [-250, 0], opacity: [0,1] }}
       transition={{ duration: 1.5 }}
       className='app__header-info'>
-        
+          
           <div className='name-cmp app__flex'>
-            <h1 className='head-text'>ANDRÉ MATOS</h1>
+            <motion.div
+            whileHover={{ rotateX: 10, rotateY: 30 }}
+            transition={{ duration: 0.5 }}
+            className='head-text'>
+                ANDRÉ MATOS
+            </motion.div>
           </div>
-          <div className='desc-cmp app__flex'>
-            <p className='p-text'>Design and Visual Artist</p>
-            <p className='p-text'>Software Web Developer</p>
-            <p className='p-text'>Technology Lover</p>
-          </div>
-        
-      </motion.div>
+          <div className='desc-cmp'>
+            <motion.div
+            whileHover={{ rotateX: 10, rotateY: 30 }}
+            transition={{ duration: 0.5 }}
+            className='p-text1'>
+                <p>Visual Designer</p>
+            </motion.div>
 
+            <motion.div
+            whileHover={{ rotateX: 10, rotateY: 30 }}
+            transition={{ duration: 0.5 }}
+            className='p-text2'>
+                <p>Software Web Developer</p>
+            </motion.div>
+            
+            <motion.div
+            whileHover={{ rotateX: 10, rotateY: 30 }}
+            transition={{ duration: 0.5 }}
+            className='p-text3'>
+                <p>Technology Lover</p>
+            </motion.div>
+          </div>
+      
+      </motion.div>
+      
       <motion.div 
       whileInView={{ opacity: [0,1] }}
-      transition={{ duration: 3, delayChildren: 0.5}}
+      transition={{ duration: 1.5 }}
       className='orb'>
-        {/* className='app__header-img'>
-        <img src={images.andrematos_creative_photo} alt='andrematos_creative_photo'/>
-        <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1.2, ease: 'easeInOut' }}
-        /> */}
       </motion.div>
+      
 
     </div>
+    
   )
 }
 

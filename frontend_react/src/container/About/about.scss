@@ -22,21 +22,51 @@
 
 .app__About-img {
     flex: 1;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 0;
     
 
     img {
-      width: 70%;
+      width: 50%;
       object-fit: contain;
       z-index: 1;
       margin-bottom: 0;
       
     }
+}
+
+/* .app__header-img {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    img {
+      width: 70%;
+      object-fit: contain;
+      z-index: 1;
+      
+    }
     @media screen and (max-width: 1200px) {
       margin: 0;
     }
-}
+  } */
+    /*
+     .overlay_circle {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1;
+      z-index: 0;
+      width: 80%;
+      height: 80%;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+*/
