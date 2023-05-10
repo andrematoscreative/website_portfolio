@@ -11,37 +11,36 @@ const Header = () => {
     <div className='app__header app__flex'>
       <motion.div 
       whileInView={{ x: [-250, 0], opacity: [0,1] }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 2 }}
       className='app__header-info'>
           
-          <div className='name-cmp app__flex'>
+          <div className='app__header-head-text app__flex'>
             <motion.div
             whileHover={{ rotateX: 10, rotateY: 30 }}
-            transition={{ duration: 0.5 }}
-            className='head-text'>
+            transition={{ duration: 0.5 }}>
                 ANDRÉ MATOS
             </motion.div>
           </div>
-          <div className='desc-cmp'>
+          <div className='app__header-description'>
             <motion.div
-            whileHover={{ rotateX: 10, rotateY: 30 }}
+            whileHover={{ rotateX: -5, rotateY: 30 }}
             transition={{ duration: 0.5 }}
-            className='p-text1'>
-                <p>Visual Designer</p>
+            className='app__header-description-text1'>
+                <p>&lt;Visual Designer/&gt;</p>
             </motion.div>
 
             <motion.div
-            whileHover={{ rotateX: 10, rotateY: 30 }}
+            whileHover={{ rotateX: -5, rotateY: 30 }}
             transition={{ duration: 0.5 }}
-            className='p-text2'>
-                <p>Software Web Developer</p>
+            className='app__header-description-text2'>
+                <p>&lt;Software Web Developer/&gt;</p>
             </motion.div>
             
             <motion.div
-            whileHover={{ rotateX: 10, rotateY: 30 }}
+            whileHover={{ rotateX: -5, rotateY: 30 }}
             transition={{ duration: 0.5 }}
-            className='p-text3'>
-                <p>Technology Lover</p>
+            className='app__header-description-text3'>
+                <p>&lt;Technology Lover/&gt;</p>
             </motion.div>
           </div>
       
@@ -50,9 +49,8 @@ const Header = () => {
       <motion.div 
       whileInView={{ opacity: [0,1] }}
       transition={{ duration: 1.5 }}
-      className='orb'>
+      className='app__header-orb'>
       </motion.div>
-      
 
     </div>
     

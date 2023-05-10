@@ -13,29 +13,26 @@
   }
 }
 
-.desc-cmp {
+.app__header-description /* p */ {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    //margin-top: 45px;
-    //margin-left: 20px;
     width: auto;
     align-items: flex-start;
     user-select: none;
+    line-height: 70px;
 
-
-  .p-text1 {
-    font-size: 1.8rem;
-    color: var(--lightblue-color);
-  }
-  .p-text2 {
-    font-size: 1.8rem;
-    color: var(--lightblue-color);
-  }
-  .p-text3 {
-    font-size: 1.8rem;
-    color: var(--lightblue-color);
-  }
+    &-text1 {
+      font-size: 2.2rem;
+      color: var(--lightblue-color);
+    }
+    &-text2 {
+      font-size: 2.2rem;
+      color: var(--lightblue-color);
+    }
+    &-text3 {
+      font-size: 2.2rem;
+      color: var(--lightblue-color);
+    }
 }
   
 .app__header {
@@ -66,7 +63,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
-    margin-top: 300px;
+    margin-top: 500px;
     z-index: 5;
 
     @media screen and (max-width: 1200px) {
@@ -75,14 +72,23 @@
     }
 }
 
+.app__header-head-text {
+  margin-bottom: 90px;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--lightblue-color);
+  text-transform: capitalize;
+  user-select: none;
 
-/* .name-cmp {
-    display: flex;
-    //margin-top: 350px;
-    //margin-left: 20px;
-    flex-direction: row;
-    width: auto;
-} */
+  @media screen and (min-width: 2000px) {
+    font-size: 50px;
+  }
+  
+  @media screen and (max-width: 450px) {
+  font-size: 1.5rem;
+  }
+}
 
 @keyframes spin {
   from {
@@ -92,28 +98,35 @@
     transform: rotate(360deg);
   }
 }
-.orb {
-  -webkit-animation: spin 6s linear infinite;
+.app__header-orb {
+  -webkit-animation: spin 3s linear infinite;
   z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 650px;
-  height: 650px;
+  width: 600px;
+  height: 600px;
   margin: auto;
   margin-top: 200px;
-
   border-radius: 50%;
-  box-shadow: inset 0 0 50px #ffffff,
+  box-shadow: inset 0 0 60px #ffffff38,
               inset 20px 0 60px #FF00CC,
               inset -20px 0 60px #12C2E9,
               inset 20px 0 300px #FF00CC,
               inset -20px 0 300px #12C2E9,
-              0 0 20px #ffffff,
-              -10px 0 60px #FF00CC,
-              10px 0 60px #12C2E9;
-              transition: transform 0.5s ease-in-out;
+              0 0 15px #ffffffbb,
+              -10px 0 80px #FF00CC,
+              10px 0 80px #12C2E9;
 }
-.orb:hover {
-  transform: scale(2);
+
+.app__header-orb:hover {
+  -webkit-animation: spin 3s linear infinite;
+  box-shadow: inset 0 0 60px #ffffff38,
+              inset 20px 0 60px #FF00CC,
+              inset -20px 0 60px #12C2E9,
+              inset 20px 0 300px #FF00CC,
+              inset -20px 0 300px #12C2E9,
+              0 0 40px #ffffff88,
+              -10px 0 100px #FF00CC,
+              10px 0 100px #12C2E9;
 }
