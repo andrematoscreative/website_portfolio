@@ -2,13 +2,15 @@
 
 :root {
     --font-base: "Maven pro", sans-serif;
-    --primary-color: #010101 /* #fff */;
-    --secondary-color: #0A537F;
+    --primary-color: #0D0C0C /* #fff */;
+    --secondary-color: #198CBE;
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
     --lightblue-color: #12C2E9;
-    --darkgreen-color: #004F71;
+    --darkgreen-color: #198CBE;
     --white-color: #D1D1D1;
+    --pink-color: #CC0FC6;
+    --gradient: linear-gradient(150deg, #12C2E9, #FF00CC);
 }
 
 * {
