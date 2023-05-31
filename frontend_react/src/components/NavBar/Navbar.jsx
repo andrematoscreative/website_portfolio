@@ -13,7 +13,8 @@ const Navbar = ({active}) => {
     <nav className='app__navbar'>
         <div className='app__navbar-logo'>
             <a href={`#Home`}>
-            <img src={images.logo} alt="logo" />
+            <div className='app__navbar-logo-blue'>ANDRÉ MATOS</div>
+            <div className='app__navbar-logo-pink'>CREATIVE</div>
             </a>
         </div>
 
