@@ -1,4 +1,6 @@
-.app__works {
+
+
+/* .app__works {
     flex: 1;
     width: 100%;
     flex-direction: column;
@@ -153,4 +155,56 @@
       background-color: #fff;
       top: -25px;
     }
+  } */
+  .app__Work-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: -350px;
+    margin-left: -660px;
   }
+  .app__Work-title{
+    flex-direction: column;
+    max-width: 420px;
+    
+  
+    &-title {
+      font-size: 18px; 
+      margin-bottom: 24px; 
+      font-size: 3rem;
+      color: var(--lightblue-color);
+      font-family: var(--font-secondary);
+    }
+  
+    &-info {
+      font-size: 1.25rem;
+      color: #ffffff;
+      font-family: var(--font-primary); 
+      margin-bottom: 20px;
+      line-height: 2rem;
+    }
+  }
+
+  .app__menu-card-image-container{
+    display: flex;
+    max-width: 1100px;
+    flex-direction: row;
+
+  }
+  .app__Work-card1,
+  .app__Work-card2{
+    flex: 1 1 auto;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid var(--lightblue-color);
+    padding: 1rem;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    color: #ffffff;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 0 5px var(--lightblue-color);
+    }
+
+}

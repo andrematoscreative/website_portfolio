@@ -17,8 +17,12 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
-      <h2 className="head-text">Skills</h2>
+
+        <>
+          <div className='app__Skills-title'>
+            <div className='app__Skills-title-title'>my Skills_</div>
+            <div className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself</div>
+          </div>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">

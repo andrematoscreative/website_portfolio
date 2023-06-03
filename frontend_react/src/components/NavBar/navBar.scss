@@ -78,7 +78,6 @@
     height: 40px;
     border-radius: 50%;
     position: relative;
-
     display:flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +87,10 @@
         width: 80%;
         height: 80%;
         color: var(--darkgreen-color);
+        
+        &:hover {
+            color: var(--pink-color); 
+        }
     }
 
     div {
@@ -100,11 +103,11 @@
         width: 50%;
         height: 45vh;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: flex-end;
         flex-direction: column;
         //background: url('../../assets/animated_grad_bg.svg');
-        background-color: rgba(37,37,37,0.95);
+        background-color: rgba(0, 0, 0, 0.95);
         border-radius: 7px;
         box-shadow: 0 0 20px rgba(37,37,37,0.15);
 
@@ -137,7 +140,7 @@
                     transition: all 0.3s ease-in-out;
 
                     &:hover {
-                        color: var(--secondary-color); 
+                        color: var(--pink-color); 
                     }
                 }
             }
