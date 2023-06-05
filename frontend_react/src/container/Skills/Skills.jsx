@@ -20,8 +20,8 @@ const Skills = () => {
 
         <>
           <div className='app__Skills-title'>
-            <div className='app__Skills-title-title'>my Skills_</div>
-            <div className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself</div>
+            <div className='app__Skills-title-title'>my skills_</div>
+            <div className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.</div>
           </div>
 
       <div className="app__skills-container">
@@ -34,7 +34,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div
-                className="app__flex"
+                className="app__skills-item-item app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />

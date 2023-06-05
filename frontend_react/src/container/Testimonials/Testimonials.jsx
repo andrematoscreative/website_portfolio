@@ -23,7 +23,10 @@ const Testimonials = () => {
 
   return (
     <>
-    <h2 className="head-text">Testimonials</h2>
+      <   div className='app__testimonials-title'>
+            <div className='app__testimonials-title-title'>my testimonials_</div>
+            <div className='app__testimonials-title-info'>Helping to empower individuals and organizations to reach their fullest potential.</div>
+          </div>
       {testimonials.length && (
         <>
           <div className="app__testimonials-item app__flex">

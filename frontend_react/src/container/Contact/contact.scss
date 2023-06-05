@@ -1,0 +1,59 @@
+.app__contact-title{
+    flex-direction: column;
+    max-width: 520px;
+    
+  
+    &-title {
+      font-size: 18px; 
+      margin-bottom: 24px; 
+      font-size: 3rem;
+      color: var(--lightblue-color);
+      font-family: var(--font-secondary);
+    }
+  
+    &-info {
+      font-size: 1.25rem;
+      color: #ffffff;
+      font-family: var(--font-primary); 
+      margin-bottom: 20px;
+      line-height: 2rem;
+    }
+}
+
+.app__contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  padding: 20px;
+}
+
+.app__contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app__contact-form label {
+    font-weight: bold;
+  }
+  
+  .app__contact-form input,
+  .app__contact-form textarea {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .app__contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .app__contact-form button:hover {
+    background-color: #0069d9;
+  }

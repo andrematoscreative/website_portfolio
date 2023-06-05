@@ -27,6 +27,7 @@ import animated_grad_bg from '../assets/animated_grad_bg.svg';
 import logo from '../assets/logo.png';
 import circle from '../assets/circle.svg';
 import app_background from '../assets/app_background.png';
+import andrematos_creative_photo3 from '../assets/andrematos_creative_photo3.png';
 
 export default {
   email,
@@ -56,6 +57,7 @@ export default {
   circle,
   logo,
   app_background,
+  andrematos_creative_photo3,
 };
 
 /*-------header background svg's------
