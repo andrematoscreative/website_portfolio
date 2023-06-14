@@ -1,6 +1,6 @@
 import React from 'react';
-import { SocialMedia } from './components';
-import { About,Contact,Header,Skills,Works,Testimonials } from './container';
+/* import { SocialMedia } from './components'; */
+import { About,Contact,Header,Skills,Works,Testimonials,Footer } from './container';
 import { Navbar } from './components';
 
 
@@ -18,6 +18,7 @@ export const App = () => {
         <Skills />
         <Testimonials />
         <Contact />
+        <Footer />
     </div>
   );
 }

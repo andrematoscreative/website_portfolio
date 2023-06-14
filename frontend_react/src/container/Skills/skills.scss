@@ -1,20 +1,19 @@
-.app__skills {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-  }
+.app__Skills {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
-  .app__Skills-info {
+.app__Skills-info {
     display: flex;
     flex-direction: column;
     margin-top: -350px;
     margin-left: -660px;
-  }
-  .app__Skills-title{
+}
+.app__Skills-title{
     flex-direction: column;
     max-width: 520px;
-    
-  
+
     &-title {
       font-size: 18px; 
       margin-bottom: 24px; 
@@ -22,7 +21,7 @@
       color: var(--lightblue-color);
       font-family: var(--font-secondary);
     }
-  
+
     &-info {
       font-size: 1.25rem;
       color: #ffffff;
@@ -31,20 +30,20 @@
       line-height: 2rem;
     }
   }
-  
-  .app__skills-container {
-    width: 85%;
+
+.app__skills-container {
+    /* width: 100%; */
     margin-top: 6rem;  
     display: flex;
     flex-direction: row;
-  
+
     @media screen and (max-width: 900px) {
       width: 80%;
       flex-direction: column;
     }
-  }
-  
-  .app__skills-list {
+}
+
+.app__skills-list {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +54,7 @@
       justify-content: center;
       align-items: center;
     }
-  }
+}
   
   .app__skills-item {
     flex-direction: column;
@@ -83,10 +82,10 @@
         transition: all 0.5s ease-in-out;
       }
   
-      @media screen and (min-width: 2000px) {
+      /* @media screen and (min-width: 2000px) {
         width: 120px;
         height: 120px;
-      }
+      } */
   
       @media screen and (max-width: 450px) {
         width: 70px;
@@ -100,9 +99,9 @@
       color: #ffffff;
       line-height: 1.3;
        
-      @media screen and (min-width: 2000px) {
+      /* @media screen and (min-width: 2000px) {
         font-size: 1.5rem;
-      }
+      } */
     }
    
       p {
@@ -110,12 +109,12 @@
       margin-top: 1rem;
     }
   
-    @media screen and (min-width: 2000px) {
+    /* @media screen and (min-width: 2000px) {
       margin: 1rem 2rem;
   
       p {
         margin-top: 1.5rem;
         font-weight: 600;
       }
-    }
+    } */
 }

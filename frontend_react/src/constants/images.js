@@ -26,8 +26,9 @@ import andrematos_creative_photo from '../assets/andrematos_creative_photo.png';
 import animated_grad_bg from '../assets/animated_grad_bg.svg';
 import logo from '../assets/logo.png';
 import circle from '../assets/circle.svg';
-import app_background from '../assets/app_background.png';
+import app_background_2 from '../assets/app_background_2.png';
 import andrematos_creative_photo3 from '../assets/andrematos_creative_photo3.png';
+
 
 export default {
   email,
@@ -56,7 +57,7 @@ export default {
   animated_grad_bg,
   circle,
   logo,
-  app_background,
+  app_background_2,
   andrematos_creative_photo3,
 };
 

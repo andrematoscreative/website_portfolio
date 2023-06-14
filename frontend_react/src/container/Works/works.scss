@@ -156,6 +156,11 @@
       top: -25px;
     }
   } */
+.app__works {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
   .app__Work-info {
     display: flex;
     flex-direction: column;

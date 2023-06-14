@@ -11,6 +11,7 @@ const Navbar = ({active}) => {
 
   return (
     <nav className='app__navbar'>
+        <div className='app__master-container'>
         <div className='app__navbar-logo'>
             <a href={`#Home`}>
             <div className='app__navbar-logo-blue'>ANDRÉ MATOS</div>
@@ -47,6 +48,7 @@ const Navbar = ({active}) => {
                 </motion.div>
             )}
         </div>
+    </div>
     </nav>
   )
 }

@@ -1,16 +1,14 @@
 .app__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4rem;
-    background: #0101010e;
+    z-index: 10;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(37,37,37,0.11);
-    position: fixed;
+    background: #0101010e;
     height:80px;
-    z-index: 2;
+    justify-content: space-between;
 }
 
 .app__navbar-logo {
@@ -20,6 +18,7 @@
     a {
         text-decoration: none;
         display: flex;
+        max-width: fit-content;
     }
 
     &-blue{
@@ -43,6 +42,7 @@
     justify-content: end;
     align-items: center;
     list-style: none;
+    
 
     li {
         margin: 0 2.5rem;
@@ -64,7 +64,7 @@
         }
         a.active {
             color:var(--pink-color);
-            font-weight: 700;
+            font-weight: 500;
           }
     }
 
@@ -79,8 +79,8 @@
     border-radius: 50%;
     position: relative;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     
 
     svg {

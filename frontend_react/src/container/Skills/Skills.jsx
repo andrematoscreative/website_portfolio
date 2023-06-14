@@ -18,7 +18,8 @@ const Skills = () => {
 
   return (
 
-        <>
+    <div className='app__Skills app__flex'>
+      <div className='app__master-container'>
           <div className='app__Skills-title'>
             <div className='app__Skills-title-title'>my skills_</div>
             <div className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.</div>
@@ -43,8 +44,9 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
+        </div>
       </div> 
-    </>
+    </div>
   );
 };
 

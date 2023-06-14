@@ -15,7 +15,8 @@ const Works = () => {
       setItemsToShow(itemsToShow + itemsToShow);
     };
   return (
-  <div className='app__Work'>
+  <div className='app__Work app__flex'>
+    <div className='app__master-container'>
         <div className='app__Work-info'>
           <div className='app__Work-title'>
             <div className='app__Work-title-title'>my work_</div>
@@ -29,6 +30,7 @@ const Works = () => {
         <div className='app__Work-card1'></div>
         <div className='app__Work-card2'></div>
       </div>
+    </div>
   </div>
 
   )

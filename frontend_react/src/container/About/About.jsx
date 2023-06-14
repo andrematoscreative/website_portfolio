@@ -7,7 +7,8 @@ import about from './about.scss';
 
 const About = () => {
   return (
-    <div className='app__About'>
+    <div className='app__About app__flex'>
+      <div className='app__master-container'>
       <div className='app__About-info'>
         <div className='app__About-img'>
           <img src={images.andrematos_creative_photo} alt='andrematos_creative_photo'/>
@@ -24,6 +25,7 @@ const About = () => {
       <p>Creating experiences that are both beautiful and functional. Constantly learning and pushing the boundaries of web development.</p>
       <p>I'm proficient in a variety of programming languages, including HTML, CSS, JavaScript, and I'm always eager to learn new ones. Above all, I'm a person who is constantly fascinated by the ways in which technology can transform the world we live in.</p>
       <b>Let's connect and see how we can bring your ideas to life!</b></div>
+      </div>
     </div>
   )
 }
