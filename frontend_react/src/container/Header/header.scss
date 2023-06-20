@@ -1,8 +1,8 @@
 #Home {
-    /* position: relative;
+    position: relative;
     background: url('../../assets/header_background_2.png');
     background-size: cover;
-    background-position: center; */
+    background-position: center;
     
 }
 
@@ -13,46 +13,28 @@
   width: 100%;
 }
 
-.app__header-description {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    align-items: flex-start;
-    user-select: none;
-    font-family: var(--font-secondary);
+.app__header-head-text {
+  margin-bottom: 60px;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--lightblue-color);
+  font-family: var(--font-secondary);
+  user-select: none;
 
-    &-text1 {
-      font-size: 1.5rem;
-      color: var(--darkgreen-color);
-      margin-bottom: 32px;
-    }
-    &-text2 {
-      font-size: 1.5rem;
-      color: var(--darkgreen-color);
-      margin-bottom: 32px;
-    }
-    &-text3 {
-      font-size: 1.5rem;
-      color: var(--darkgreen-color);
-    }
+  @media screen and (max-width: 450px) {
+    margin-bottom: 30px;
+    font-size: 4rem;
+  }
+
+  /* @media screen and (min-width: 2000px) {
+    font-size: 50px;
+  }
+  
+  @media screen and (max-width: 450px) {
+  font-size: 1.5rem;
+  } */
 }
-  
-  
-    /* padding: 6rem 2rem 0rem; */
-
-    /* @media screen and (min-width: 2000px) {
-      padding-top: 8rem;
-    }
-
-    @media screen and (max-width: 1200px) {
-      flex-direction: column;
-    }
-
-    @media screen and (max-width: 450px) {
-      padding: 6rem 1rem 2rem;
-    } */
-
-
 .app__header-info {
     margin-left: 100px;
     flex: 1;
@@ -63,49 +45,97 @@
     height: 100%;
     z-index: 2;
 
-    /* @media screen and (max-width: 1200px) {
-        width: 100%;
-        margin-right: 0rem;
-    } */
+    @media screen and (max-width: 1200px) {
+      margin-left: 20px;
+    }
 }
 
+.app__header-description {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    user-select: none;
+    letter-spacing: 0.1px;
+    font-family: var(--font-secondary);
+    visibility: hidden;
 
+    &-text1 {
+      font-size: 2rem;
+      color: var(--darkgreen-color);
+      margin-bottom: 32px;
+      animation: textAnimation 3s forwards 3.8s;
 
-.app__header-head-text {
-  margin-bottom: 40px;
-  font-size: 4rem;
-  font-weight: 700;
-  text-align: left;
-  color: var(--lightblue-color);
-  font-family: var(--font-secondary);
-  user-select: none;
+      @media screen and (max-width: 450px) {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+    }
 
-  /* @media screen and (min-width: 2000px) {
-    font-size: 50px;
+    &-text2 {
+      font-size: 2rem;
+      color: var(--darkgreen-color);
+      margin-bottom: 32px;
+      animation: textAnimation 3s forwards 4.2s;
+      
+      @media screen and (max-width: 450px) {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-text3 {
+      font-size: 2rem;
+      color: var(--darkgreen-color);
+      margin-bottom: 32px;
+      animation: textAnimation 3s forwards 4.6s;
+
+      @media screen and (max-width: 450px) {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+    }
+}
+
+@keyframes textAnimation {
+  0% {
+    visibility: hidden;
+    transform: translateX(-150px);
   }
-  
-  @media screen and (max-width: 450px) {
-  font-size: 1.5rem;
-  } */
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
 }
 
-.app__header-head-text-secondary {
-  margin-bottom: 88px;
-  font-size: 3rem;
+.blink {
+  font-size: 2rem;
   font-weight: 700;
   text-align: left;
   color: var(--lightblue-color);
   font-family: var(--font-secondary);  
   user-select: none;
+  visibility: hidden;
+  animation: blink .85s infinite;
+  animation-delay: 7s;
 
-  /* @media screen and (min-width: 2000px) {
-    font-size: 50px;
-  }
-  
   @media screen and (max-width: 450px) {
-  font-size: 1.5rem;
-  } */
+    font-size: 1.3rem;
+  }
 }
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
 
 /* @keyframes spin {
   from {

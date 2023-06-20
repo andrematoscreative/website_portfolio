@@ -34,10 +34,10 @@ const Contact = () => {
   };
 
 return (
-  <div className='app__contact'>
+  <div className='app__Contact'>
   <div className='app__master-container'>
     <div className='app__contact-title '>
-      <div className='app__contact-title-title'>my contact_</div>
+      <div className='app__contact-title-title'>contact me_</div>
       <div className='app__contact-title-info'>Helping to empower individuals and organizations to reach their fullest potential.</div>
     </div>
 

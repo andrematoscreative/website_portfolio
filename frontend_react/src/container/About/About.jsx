@@ -23,7 +23,7 @@ const About = () => {
       <div className='app__About-desc'><p>Tech enthusiast exploring the ever-evolving world of design, 
       development, and emerging technologies. Constantly striving for creative excellence.</p>
       <p>Creating experiences that are both beautiful and functional. Constantly learning and pushing the boundaries of web development.</p>
-      <p>I'm proficient in a variety of programming languages, including HTML, CSS, JavaScript, and I'm always eager to learn new ones. Above all, I'm a person who is constantly fascinated by the ways in which technology can transform the world we live in.</p>
+      <p>I'm proficient in a variety of programming languages, including HTML, CSS, JavaScript, and I'm always eager to learn new ones.</p><p> Above all, I'm a person who is constantly fascinated by the ways in which technology can transform the world we live in.</p>
       <b>Let's connect and see how we can bring your ideas to life!</b></div>
       </div>
     </div>
