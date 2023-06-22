@@ -21,8 +21,19 @@ const Skills = () => {
     <div className='app__Skills app__flex'>
       <div className='app__master-container'>
           <div className='app__Skills-title'>
-            <div className='app__Skills-title-title'>my skills_</div>
-            <div className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.</div>
+
+            <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0,1] }}
+            transition={{ duration: 1 }}
+            className='app__Skills-title-title'>my skills_
+            </motion.div>
+
+            <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0,1] }}
+            transition={{ duration: 1.5 }}
+            className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.
+            </motion.div>
+          
           </div>
 
       <div className="app__skills-container">

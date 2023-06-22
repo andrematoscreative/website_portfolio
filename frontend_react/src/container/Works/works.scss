@@ -156,59 +156,98 @@
       top: -25px;
     }
   } */
-.app__works {
+.app__Work {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  user-select: none;
 }
-  .app__Work-info {
+
+.app__Work-info {
+    flex: 1;
     display: flex;
     flex-direction: column;
-  }
-  .app__Work-title{
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+}
+
+.app__Work-title {
     flex-direction: column;
-    max-width: 520px;
-    
+    max-width: 420px;
+    margin-top: 100px;
   
     &-title {
-      font-size: 18px; 
       margin-bottom: 24px; 
       font-size: 3rem;
       color: var(--lightblue-color);
       font-family: var(--font-secondary);
+      
+      @media screen and (max-width: 450px) {
+        font-size: 2rem;
+        margin-bottom: 16px;
+      }
     }
-  
+      
     &-info {
       font-size: 1.25rem;
       color: #ffffff;
-      font-family: var(--font-primary); 
-      margin-bottom: 20px;
+      font-family: var(--font-primary);
       line-height: 2rem;
+  
+      @media screen and (max-width: 450px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
     }
-  }
+    @media screen and (max-width: 450px) {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+}
 
-  .app__menu-card-image-container{
+
+.app__Work_blink {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  font-family: var(--font-primary);  
+  user-select: none;
+  visibility: hidden;
+  animation: blink .85s infinite;
+  animation-delay: 2s;
+
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+
+.app__Work-cards-container{
     display: flex;
-    
+    width: 100%;
     flex-direction: row;
-    justify-content: space-evenly;
-
-  }
+    justify-content: space-between;
+}
+  
   .app__Work-card1,
-  .app__Work-card2{
+  .app__Work-card2,
+  .app__Work-card3,
+  .app__Work-card4 {
     flex: 1 1 auto;
     display: flex;
     gap: 1rem;
     border: 1px solid var(--lightblue-color);
     padding: 1rem;
-    width: 500px;
+    max-width: 500px;
     height: 300px;
     border-radius: 10px;
     color: #ffffff;
+    cursor: pointer;
 
     &:hover {
-        transition: all 0.5s ease-in-out;
-        box-shadow: 0 0 20px var(--lightblue-color);
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 0 20px var(--lightblue-color);
     }
-
 }

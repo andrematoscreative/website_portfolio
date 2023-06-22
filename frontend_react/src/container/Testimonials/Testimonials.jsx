@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
-
+import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, sanity } from '../../sanity';
 import testimonials from './testimonials.scss';
@@ -25,9 +25,21 @@ const Testimonials = () => {
     <div className='app__Testimonials'>
     <div className='app__master-container'>
           <div className='app__testimonials-title'>
-            <div className='app__testimonials-title-title'>my testimonials_</div>
-            <div className='app__testimonials-title-info'>Helping to empower individuals and organizations to reach their fullest potential.</div>
+
+            <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0,1] }}
+            transition={{ duration: 1 }}
+            className='app__testimonials-title-title'>my testimonials_
+            </motion.div>
+
+            <motion.div
+            whileInView={{ x: [-100, 0], opacity: [0,1] }}
+            transition={{ duration: 1.5 }}
+            className='app__testimonials-title-info'>Helping to empower individuals and organizations to reach their fullest potential.
+            </motion.div>
+
           </div>
+
           {testimonials.length && (
           <>
             <div className="app__testimonials-item app__flex">

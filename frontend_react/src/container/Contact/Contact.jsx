@@ -37,14 +37,21 @@ return (
   <div className='app__Contact'>
   <div className='app__master-container'>
     <div className='app__contact-title '>
-      <div className='app__contact-title-title'>contact me_</div>
-      <div className='app__contact-title-info'>Helping to empower individuals and organizations to reach their fullest potential.</div>
+
+      <motion.div
+      whileInView={{ x: [-100, 0], opacity: [0,1] }}
+      transition={{ duration: 1 }}
+      className='app__contact-title-title'>contact me_
+      </motion.div>
+
+      <motion.div
+      whileInView={{ x: [-100, 0], opacity: [0,1] }}
+      transition={{ duration: 1.5 }}
+      className='app__contact-title-info'>Helping to empower individuals and organizations to reach their fullest potential.
+      </motion.div>
+
     </div>
 
-
-  
-      
-  
     <div className='app__contact-content'>
         <div className='app__contact-content-img'>
           <img src={images.andrematos_creative_photo3} alt='andrematos_creative_photo'/>
