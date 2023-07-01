@@ -6,23 +6,54 @@
 
 .app__testimonials-title{
   flex-direction: column;
-  max-width: 520px;
+  max-width: 420px;
+  margin-top: 100px;
+  display: flex;
   
-
   &-title {
-    font-size: 18px; 
     margin-bottom: 24px; 
     font-size: 3rem;
     color: var(--lightblue-color);
     font-family: var(--font-secondary);
+      
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
   }
-
+      
   &-info {
     font-size: 1.25rem;
     color: #ffffff;
-    font-family: var(--font-primary); 
-    margin-bottom: 20px;
+    font-family: var(--font-primary);
     line-height: 2rem;
+  
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+    
+  @media screen and (max-width: 450px) {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+
+.app__Work-blink {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  font-family: var(--font-primary);  
+  user-select: none;
+  visibility: hidden;
+  animation: blink .85s infinite;
+  animation-delay: 2s;
+
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
   }
 }
 
@@ -32,7 +63,7 @@
     min-height: 510px;
     backdrop-filter: blur(26px);
     -webkit-backdrop-filter: blur(26px);
-    /* background-color: #1616167c; */
+    background-color: #1616167c;
     display: flex;
     flex-direction: row;
     padding: 80px;

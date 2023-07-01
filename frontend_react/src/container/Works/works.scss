@@ -1,214 +1,58 @@
-
-
-/* .app__works {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .app__works-filter {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-  
-    margin: 4rem 0 2rem;
-  
-    .app__works-filter-item {
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      background-color: #fff;
-      color: #000;
-      font-weight: 800;
-  
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin: 0.5rem;
-  
-      &:hover {
-        background-color: var(--secondary-color);
-        color: #fff;
-      }
-  
-      @media screen and (min-width: 2000px) {
-        padding: 1rem 2rem;
-        border-radius: 0.85rem;
-      }
-    }
-  
-    .item-active {
-      background-color: var(--secondary-color);
-      color: #fff;
-    }
-  }
-  
-  .app__works-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  
-    .app__works-item {
-      width: 270px;
-      flex-direction: column;
-  
-      margin: 2rem;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      background-color: #fff;
-      color: #000;
-  
-      cursor: pointer;
-      transition: all 0.3s ease;
-  
-      &:hover {
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-      }
-  
-      @media screen and (min-width: 2000px) {
-        width: 470px;
-        padding: 1.25rem;
-        border-radius: 0.75rem;
-      }
-  
-      @media screen and (max-width: 300px) {
-        width: 100%;
-        margin: 1rem;
-      }
-    }
-  }
-  
-  .app__works-img {
-    width: 100%;
-    height: 230px;
-  
-    position: relative;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-      object-fit: cover;
-    }
-  
-    @media screen and (min-width: 2000px) {
-      height: 350px;
-    }
-  }
-  
-  .app__works-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  
-    border-radius: 0.5rem;
-    opacity: 0;
-    transition: all 0.3s ease;
-  
-    div {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff;
-  
-      margin: 1rem;
-      font-family: var(--font-base);
-      font-weight: 800;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  
-      svg {
-        width: 50%;
-        height: 50%;
-        color: var(--white-color);
-      }
-    }
-  }
-  
-  .app__works-content {
-    padding: 0.5rem;
-    width: 100%;
-    position: relative;
-    flex-direction: column;
-  
-    h4 {
-      margin-top: 1rem;
-      line-height: 1.5;
-  
-      @media screen and (min-width: 2000px) {
-        margin-top: 3rem;
-      }
-    }
-  
-    .app__works-tag {
-      position: absolute;
-  
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      background-color: #fff;
-      top: -25px;
-    }
-  } */
 .app__Work {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  
   width: 100%;
   user-select: none;
 }
 
 .app__Work-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100vh;
+  z-index: 2;
 }
 
 .app__Work-title {
-    flex-direction: column;
-    max-width: 420px;
-    margin-top: 100px;
+  flex-direction: column;
+  max-width: 420px;
+  margin-top: 100px;
+  display: flex;
   
-    &-title {
-      margin-bottom: 24px; 
-      font-size: 3rem;
-      color: var(--lightblue-color);
-      font-family: var(--font-secondary);
+  &-title {
+    margin-bottom: 24px; 
+    font-size: 3rem;
+    color: var(--lightblue-color);
+    font-family: var(--font-secondary);
       
-      @media screen and (max-width: 450px) {
-        font-size: 2rem;
-        margin-bottom: 16px;
-      }
-    }
-      
-    &-info {
-      font-size: 1.25rem;
-      color: #ffffff;
-      font-family: var(--font-primary);
-      line-height: 2rem;
-  
-      @media screen and (max-width: 450px) {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-    }
     @media screen and (max-width: 450px) {
-      margin-top: 0px;
-      margin-left: 0px;
+      font-size: 2rem;
+      margin-bottom: 16px;
     }
+  }
+      
+  &-info {
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    line-height: 2rem;
+  
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+    
+  @media screen and (max-width: 450px) {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 
 
-.app__Work_blink {
+.app__Work-blink {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: left;
@@ -225,29 +69,62 @@
 }
 
 .app__Work-cards-container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
 }
   
-  .app__Work-card1,
-  .app__Work-card2,
-  .app__Work-card3,
-  .app__Work-card4 {
-    flex: 1 1 auto;
-    display: flex;
-    gap: 1rem;
-    border: 1px solid var(--lightblue-color);
-    padding: 1rem;
-    max-width: 500px;
-    height: 300px;
-    border-radius: 10px;
-    color: #ffffff;
-    cursor: pointer;
+.app__Work-card1,
+.app__Work-card2,
+.app__Work-card3,
+.app__Work-card4 {
+  display: flex;
+  gap: 20px;
+  border: 1px solid var(--lightblue-color);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+  background-color: #1616167c;
+  padding: 10px;
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+    
 
-    &:hover {
+  @media screen and (max-width: 450px) {
+    width: 350px;
+    height: 250px;
+  }
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 20px var(--lightblue-color);
+
+    @media screen and (max-width: 450px) {
       transition: all 0.5s ease-in-out;
-      box-shadow: 0 0 20px var(--lightblue-color);
+      box-shadow: 0 0 10px var(--lightblue-color);
     }
+  }
+}
+
+.app__Work-cards-container h1 {
+  animation: pulse 2s infinite;
+  font-size: 1rem;
+  color: var(--lightblue-color);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }

@@ -8,18 +8,12 @@ import works from './works.scss';
 
 
 const Works = () => {
-    const [itemsToShow, setItemsToShow] = useState(4);
-    const [searchTerm, setSearchTerm] = useState('');
-  
-    const loadMoreItems = () => {
-      setItemsToShow(itemsToShow + itemsToShow);
-    };
+    
   return (
   <div className='app__Work app__flex'>
     <div className='app__master-container'>
         <div className='app__Work-info'>
           <div className='app__Work-title'>
-
             <motion.div
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1 }}
@@ -30,16 +24,17 @@ const Works = () => {
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1.5 }}
             className='app__Work-title-info'>Check some of my work...Crafting the future, one project at a time.
-            <div className='app__Work_blink'>|</div>
+            <div className='app__Work-blink'>|</div>
             </motion.div>
-          
           </div>
-            <div className="app__Work-cards-container">
-              <div className='app__Work-card1'></div>
-              <div className='app__Work-card2'></div>
-              <div className='app__Work-card3'></div>
-              <div className='app__Work-card4'></div>
-            </div>
+            
+          <div className="app__Work-cards-container">
+              <div class="app__Work-card1"><h1>Loading...</h1></div>
+              <div class="app__Work-card2"><h1>Loading...</h1></div>
+              <div class="app__Work-card3"><h1>Loading...</h1></div>
+              <div class="app__Work-card4"><h1>Loading...</h1></div>
+            
+          </div>
         </div>
     </div>
   </div>

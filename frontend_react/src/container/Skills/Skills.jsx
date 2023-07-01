@@ -32,21 +32,22 @@ const Skills = () => {
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1.5 }}
             className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.
+            <div className='app__Skills-blink'>|</div>
             </motion.div>
           
           </div>
 
-      <div className="app__skills-container">
-        <motion.div className="app__skills-list">
+      <div className="app__Skills-container">
+        <motion.div className="app__Skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 2 }}
-              className="app__skills-item app__flex"
+              className="app__Skills-item app__flex"
               key={skill.name}
             >
               <div
-                className="app__skills-item-item app__flex"
+                className="app__Skills-item-item app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />

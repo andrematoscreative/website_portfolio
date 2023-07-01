@@ -49,6 +49,7 @@
 
 .app__navbar-links {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -71,7 +72,7 @@
 
         }
         a.active {
-            color:var(--pink-color);
+            color: var(--pink-color);
             font-weight: 500;
         }
         
