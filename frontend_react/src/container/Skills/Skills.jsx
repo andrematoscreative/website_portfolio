@@ -25,7 +25,7 @@ const Skills = () => {
             <motion.div
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1 }}
-            className='app__Skills-title-title'>my skills_
+            className='app__Skills-title-title'>my skills
             </motion.div>
 
             <motion.div
@@ -37,8 +37,8 @@ const Skills = () => {
           
           </div>
 
-      <div className="app__Skills-container">
-        <motion.div className="app__Skills-list">
+        <div className="app__Skills-container">
+          <motion.div className="app__Skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
@@ -55,7 +55,7 @@ const Skills = () => {
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
-        </motion.div>
+          </motion.div>
         </div>
       </div> 
     </div>
