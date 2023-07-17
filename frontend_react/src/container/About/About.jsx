@@ -40,7 +40,7 @@ const About = () => {
                 <a className="app__About-container-git"href="https://github.com/andrematoscreative" target="_blank">
                 <BsGithub/>
                 </a>
-                <a className="app__contact-container-connections-wakatime"href="https://wakatime.com/@andrematoscreative"target="_blank">
+                <a className="app__About-container-connections-wakatime"href="https://wakatime.com/@andrematoscreative"target="_blank">
                 <SiWakatime/>
                 </a>
               </div>

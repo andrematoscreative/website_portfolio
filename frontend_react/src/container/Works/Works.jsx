@@ -23,16 +23,16 @@ const Works = () => {
             <motion.div
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1.5 }}
-            className='app__Work-title-info'>Check some of my work...Crafting the future, one project at a time.
+            className='app__Work-title-info'>Check some of my work. Crafting the future, one project at a time.
             <div className='app__Work-blink'>|</div>
             </motion.div>
           </div>
             
           <div className="app__Work-cards-container">
-              <div class="app__Work-card1"><h1>Loading...</h1></div>
-              <div class="app__Work-card2"><h1>Loading...</h1></div>
-              <div class="app__Work-card3"><h1>Loading...</h1></div>
-              <div class="app__Work-card4"><h1>Loading...</h1></div>
+              <div class="app__Work-card1"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
+              <div class="app__Work-card2"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
+              <div class="app__Work-card3"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
+              <div class="app__Work-card4"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
             
           </div>
         </div>

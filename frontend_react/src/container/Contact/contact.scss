@@ -1,13 +1,22 @@
 .app__Contact{
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.app__contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .app__contact-title{
-    flex-direction: column;
-    max-width: 520px;
-    
+  max-width: 420px;
+  margin-left: 20px;
+  margin-top: 50px;;
   
     &-title {
       font-size: 18px; 
@@ -26,14 +35,31 @@
     }
 }
 
+.app__contact-blink {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: left;
+  color: #ffffff;
+  font-family: var(--font-primary);  
+  user-select: none;
+  visibility: hidden;
+  animation: blink .85s infinite;
+  animation-delay: 2s;
+
+  @media screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+
 .app__contact-content {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     padding: 30px;
 
     &-img img {
-      width: 50%;
+      width: 500px;
     }
 
     &-form form {
@@ -83,4 +109,28 @@
       box-shadow: 0 0 15px var(--lightblue-color);
       transition: all 0.5s ease-in-out;
     }
+}
+
+.app__contact-desc-container-icons a svg {
+  margin-right: 20px;
+  margin-top: 40px;
+  color: var(--lightblue-color);
+  height: 24px;
+  width: 24px;
+
+  &:hover {
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      color: var(--lightblue-color);
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    height: 16px;
+    width: 16px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }

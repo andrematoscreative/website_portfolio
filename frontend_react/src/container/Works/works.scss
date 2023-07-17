@@ -1,25 +1,21 @@
 .app__Work {
   height: 100vh;
-  position: relative;
-  
+  position: relative;  
   width: 100%;
   user-select: none;
 }
 
 .app__Work-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
   height: 100vh;
-  z-index: 2;
 }
 
 .app__Work-title {
-  flex-direction: column;
   max-width: 420px;
-  margin-top: 100px;
-  display: flex;
+  margin-left: 20px;
+  margin-top: 30px;
   
   &-title {
     margin-bottom: 24px; 
@@ -72,7 +68,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 50px;
 }
   
@@ -81,12 +77,12 @@
 .app__Work-card3,
 .app__Work-card4 {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--lightblue-color);
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
   background-color: #1616167c;
-  padding: 10px;
   width: 650px;
   height: 300px;
   border-radius: 10px;
@@ -102,7 +98,7 @@
 
   &:hover {
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 0 20px var(--lightblue-color);
+    box-shadow: 0 0 10px var(--lightblue-color);
 
     @media screen and (max-width: 450px) {
       transition: all 0.5s ease-in-out;
@@ -111,20 +107,26 @@
   }
 }
 
+.andrematoscreative-logo {
+  height: 80px;
+  width: 80px;
+
+}
+
 .app__Work-cards-container h1 {
-  animation: pulse 2s infinite;
-  font-size: 1rem;
+  animation: pulse 3s infinite;
+  font-size: 1.5rem;
   color: var(--lightblue-color);
 }
 
 @keyframes pulse {
   0% {
-    opacity: 0.2;
+    opacity: 0.05;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: 0.2;
+    opacity: 0.05;
   }
 }

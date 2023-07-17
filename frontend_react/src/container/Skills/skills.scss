@@ -2,12 +2,14 @@
   height: 100vh;
   position: relative;
   user-select: none;
+  width: 100%;
 }
 
 .app__Skills-info {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .app__Skills-title{
