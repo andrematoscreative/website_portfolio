@@ -1,16 +1,14 @@
 .app__Contact{
-  height: 100vh;
   position: relative;
   user-select: none;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 .app__contact-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app__contact-title{
@@ -18,12 +16,16 @@
   margin-left: 20px;
   margin-top: 50px;;
   
-    &-title {
-      font-size: 18px; 
+    &-title { 
       margin-bottom: 24px; 
       font-size: 3rem;
       color: var(--lightblue-color);
       font-family: var(--font-secondary);
+      
+      @media screen and (max-width: 450px) {
+        font-size: 2rem;
+        margin-bottom: 16px;
+      }
     }
   
     &-info {
@@ -32,8 +34,19 @@
       font-family: var(--font-primary); 
       margin-bottom: 20px;
       line-height: 2rem;
+
+      @media screen and (max-width: 450px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
     }
-}
+      
+    @media screen and (max-width: 450px) {
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+  }
+
 
 .app__contact-blink {
   font-size: 1.25rem;
@@ -60,6 +73,10 @@
 
     &-img img {
       width: 500px;
+      
+      @media screen and (max-width: 450px) {
+        width: 380px;
+      }
     }
 
     &-form form {
@@ -71,6 +88,10 @@
         color:#ffffff;
         font-size: 1.2rem;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 450px) {
+          font-size: 1rem;
+        }
     }
 
     &-form input, textarea {
@@ -84,12 +105,15 @@
         border-radius: 4px;
         margin-bottom: 20px;
         border-radius: 20px;
+
+        @media screen and (max-width: 450px) {
+          width: 350px;
+        }
     }
 
     &-form textarea {
       height: 144px;
       font-size: 1rem;
-
   }
 
     &-form button {
@@ -106,8 +130,13 @@
 
     &-form button:hover {
       color: #fff;
-      box-shadow: 0 0 15px var(--lightblue-color);
+      box-shadow: 0 0 10px var(--lightblue-color);
       transition: all 0.5s ease-in-out;
+    }
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column-reverse;
+      padding: 10px;
     }
 }
 
@@ -128,9 +157,7 @@
   }
   
   @media screen and (max-width: 450px) {
-    height: 16px;
-    width: 16px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 0px;
   }
 }

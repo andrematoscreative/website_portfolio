@@ -29,10 +29,10 @@ const Works = () => {
           </div>
             
           <div className="app__Work-cards-container">
-              <div class="app__Work-card1"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
-              <div class="app__Work-card2"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
-              <div class="app__Work-card3"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
-              <div class="app__Work-card4"><img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/><h1>Coming soon...</h1></div>
+              <div class="app__Work-card1">{/* <img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/> */}<div className="loading-icon"><div className="loading-icon-inner" /></div><h1>Coming soon...</h1></div>
+              <div class="app__Work-card2">{/* <img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/> */}<div className="loading-icon"><div className="loading-icon-inner" /></div><h1>Coming soon...</h1></div>
+              <div class="app__Work-card3">{/* <img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/> */}<div className="loading-icon"><div className="loading-icon-inner" /></div><h1>Coming soon...</h1></div>
+              <div class="app__Work-card4">{/* <img className="andrematoscreative-logo" src={images.logo} alt='andre matos creative logo'/> */}<div className="loading-icon"><div className="loading-icon-inner" /></div><h1>Coming soon...</h1></div>
             
           </div>
         </div>

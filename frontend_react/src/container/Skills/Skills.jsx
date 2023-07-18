@@ -31,7 +31,8 @@ const Skills = () => {
             <motion.div
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1.5 }}
-            className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.<div className='app__Skills-blink'>|</div>
+            className='app__Skills-title-info'>Always learning, always growing. Follow my journey as I sharpen my skills and challenge myself.
+            <div className='app__Skills-blink'>|</div>
             </motion.div>
           
           </div>

@@ -1,6 +1,5 @@
 .app__Work {
-  height: 100vh;
-  position: relative;  
+  position: relative; 
   width: 100%;
   user-select: none;
 }
@@ -9,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app__Work-title {
@@ -68,7 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 35px;
   margin-top: 50px;
 }
   
@@ -83,12 +82,13 @@
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
   background-color: #1616167c;
-  width: 650px;
-  height: 300px;
-  border-radius: 10px;
+  width: 500px;
+  height: 280px;
+  border-radius: 20px;
   color: #ffffff;
   cursor: pointer;
   box-sizing: border-box;
+  flex-direction: column;
     
 
   @media screen and (max-width: 450px) {
@@ -108,8 +108,8 @@
 }
 
 .andrematoscreative-logo {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 
 }
 
@@ -128,5 +128,29 @@
   }
   100% {
     opacity: 0.05;
+  }
+}
+
+.loading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.loading-icon-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid #2b2b2b;
+  border-top-color: #12C2E9;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
