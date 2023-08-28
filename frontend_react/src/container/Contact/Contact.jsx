@@ -1,6 +1,6 @@
 import React , { useState }from 'react'
 import { motion } from 'framer-motion';
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { images } from '../../constants';
 import { BsGithub,BsLinkedin } from 'react-icons/bs';
 import { SiWakatime } from 'react-icons/si';
@@ -44,7 +44,7 @@ return (
           <motion.div
           whileInView={{ x: [-100, 0], opacity: [0,1] }}
           transition={{ duration: 1 }}
-          className='app__contact-title-title'>contact me
+          className='app__contact-title-title'>&lt;contact/&gt;
           </motion.div>
 
           <motion.div
@@ -57,16 +57,16 @@ return (
         </div>
 
         <div className='app__contact-content'>
-            <div className='app__contact-content-img'>
+            {/* <div className='app__contact-content-img'>
               <img src={images.andrematos_creative_photo3} alt='andrematos_creative_photo'/>
-            </div>
+            </div> */}
 
             <div className="app__contact-content-form">
               <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" value={name} onChange={nameForm}/>
 
-                <label htmlFor="email">E-mail</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" id="email" value={email} onChange={emailForm}/>
 
                 <label htmlFor="message">Message</label>
@@ -95,4 +95,4 @@ return (
   )
 }
 
-export default AppWrap(Contact, 'Contact');
+export default AppWrap(MotionWrap(Contact),'Contact');

@@ -13,32 +13,40 @@
 
 .app__testimonials-title{
   max-width: 530px;
-  margin-left: 20px;
+  margin-top: 40px;
   
   &-title {
-    margin-bottom: 24px; 
-    font-size: 3rem;
+    margin-bottom: 8px; 
+    font-size: 2rem;
     color: var(--lightblue-color);
-    font-family: var(--font-secondary);
-      
+    font-family: var(--font-primary);
+    
+    @media screen and (max-width: 900px) {
+      margin-left: 1rem;
+    }
+
     @media screen and (max-width: 450px) {
       font-size: 2rem;
-      margin-bottom: 16px;
-    }
-  }
-      
-  &-info {
-    font-size: 1.25rem;
-    color: #ffffff;
-    font-family: var(--font-primary);
-    line-height: 2rem;
-  
-    @media screen and (max-width: 450px) {
-      font-size: 1rem;
-      line-height: 1.5rem;
+      margin-bottom: 8px;
+      margin-top: 100px;
     }
   }
     
+  &-info {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--font-primary);
+    line-height: 1.6rem;
+
+    @media screen and (max-width: 900px) {
+      margin-left: 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 1rem;
+    }
+  }
   @media screen and (max-width: 450px) {
     margin-top: 0px;
     margin-left: 0px;
@@ -74,20 +82,19 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .app__testimonials-item {
     justify-content: space-between;
     width: 1000px;
-    min-height: 490px;
+    height: 480px;
     backdrop-filter: blur(26px);
     -webkit-backdrop-filter: blur(26px);
     background-color: #1616167c;
     display: flex;
     flex-direction: row;
     padding: 56px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid var(--lightblue-color);
 
     img {
@@ -97,78 +104,95 @@
       border-radius: 10px;
       object-fit: cover;
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 900px) {
         margin-right: 0px;
-        margin-top: 8px;
-        margin-bottom: 24px;
-        width: 170px;
-        height: 170px;
+        margin-bottom: 16px;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 8px;
       }
     }
 
-    @media screen and (max-width: 650px) {
-      width: 380px;
-      flex-direction: column;
-      border: 1px solid var(--lightblue-color);
-      min-height: 500px;
-      padding: 24px;
-      align-items: center;
-    }
-}
-  
-.app__testimonials-content {
-    flex: 1;
-    height: 100%;
-    text-align: left;
-    display: flex;
+  @media screen and (max-width: 900px) {
+    width: 670px;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  
-    .app__testimonials-content-text {
-      text-align: left;
-      font-size: 1.2rem;
-      font-weight: 400;
-      line-height: 2rem;
-      color: #ffffff;
-      font-family: var(--font-base);
+    height: 625px;
+    padding: 24px;
+    align-items: center;
+  }
 
-      @media screen and (max-width: 500px) {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-  
-    }
-  
-    .app__testimonials-content-name {
-      font-size: 2rem;
-      font-weight: 500;
-      text-align: left;
-      color: var(--lightblue-color);
-      margin-top: 2.5rem;
-      
-      @media screen and (max-width: 500px) {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-      }
-
-    }
-  
-    .app__testimonials-content-job {
-      font-size: 1.3rem;
-      font-weight: 500;
-      text-align: left;
-      color: #d9d9d9;
-      margin-top: 15px;
-
-      @media screen and (max-width: 500px) {
-        font-size: 1.1rem;
-        margin-top: 12px;
-      }
-    }
-
+  @media screen and (max-width: 450px) {
+    width: 370px;
+  }
 }
+
+.app__testimonials-content {
+  flex: 1 0 0;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.1rem;
+    margin-top: 12px;
+    justify-content: flex-start;
+  }
+}
+
+.app__testimonials-content-text {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #ffffff;
+  font-family: var(--font-base);
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.app__testimonials-content-titles {
+  width: fit-content;
+
+  &-name {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--lightblue-color);
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.7rem;
+      margin-top: 16px; 
+    }
   
+    @media screen and (max-width: 500px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-job {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+    color: #d9d9d9;
+    margin-top: 15px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 1.1rem;
+      margin-top: 5px;
+    }
+  }
+}
+
+
 .app__testimonials-btn-left,
 .app__testimonials-btn-right {
   display: flex;
@@ -197,16 +221,26 @@
     }
 
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 
 }
 
+.app__testimonials-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 10px;
+  }
+}
+
 .app__testimonials-dots {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .app__testimonials-dot {
@@ -221,4 +255,38 @@
 
 .app__testimonials-dot.active {
   background-color: var(--white-color);
+}
+
+.app__testimonials-btn-left2,
+.app__testimonials-btn-right2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #1616167c;
+  border: 2px solid var(--lightblue-color);
+  margin: 1.5rem;
+  cursor: pointer;
+
+  svg {
+    width: 35px;
+    height: 35px;
+    color: var(--lightblue-color);
+  }
+  
+  &:hover {
+    background-color: var(--lightblue-color);
+    transition: all 0.2s ease-in-out;
+  
+    svg {
+      color: var(--white-color);
+    }
+
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+
 }

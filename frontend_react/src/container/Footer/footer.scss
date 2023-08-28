@@ -1,5 +1,5 @@
 .app__Footer {
-    background: #0f0f0f;
+    background: #0c0c0c;
     padding: 20px;
     text-align: center;
     justify-content: space-between;
@@ -20,10 +20,10 @@
     display: flex;
     justify-content: space-between;
     color: var(--lightblue-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     @media screen and (max-width: 450px) {
-      font-size: 1rem;
+      font-size: 0.85rem;
       flex-direction: column;
     }
   }
@@ -32,16 +32,16 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     @media screen and (max-width: 450px) {
-      font-size: 1rem;
+      font-size: 0.85rem;
       padding-top: 10px;
     }
   }
 
   .app__footer-logo img{
-    width: 60px;
+    width: 55px;
     margin-left: 24px;
 
     @media screen and (max-width: 450px) {

@@ -53,7 +53,7 @@ const Testimonials = () => {
               <motion.div
               whileInView={{ x: [-100, 0], opacity: [0,1] }}
               transition={{ duration: 1 }}
-              className='app__testimonials-title-title'>my testimonials
+              className='app__testimonials-title-title'>&lt;testimonials/&gt;
               </motion.div>
               <motion.div
               whileInView={{ x: [-100, 0], opacity: [0,1] }}
@@ -75,13 +75,12 @@ const Testimonials = () => {
                   <div className="app__testimonials-item">
                     <img src={urlFor(testimonials[currentIndex].imgUrl)} alt={testimonials[currentIndex].name} />
                     <div className="app__testimonials-content">
-                      <p className="app__testimonials-content-text">{testimonials[currentIndex].feedback}</p>
+                      <div className="app__testimonials-content-text">{testimonials[currentIndex].feedback}</div>
 
                       <div className='app__testimonials-content-titles'>
-                        <h4 className="app__testimonials-content-name">{testimonials[currentIndex].name}</h4>
-                        <h5 className="app__testimonials-content-job">{testimonials[currentIndex].company}</h5>
+                        <div className="app__testimonials-content-titles-name">{testimonials[currentIndex].name}</div>
+                        <div className="app__testimonials-content-titles-job">{testimonials[currentIndex].company}</div>
                       </div>
-
                     </div>
                   </div>
                 </>
@@ -92,7 +91,16 @@ const Testimonials = () => {
                 </div>
 
             </div>
-            <NavigationDots/>
+            <div className='app__testimonials-nav'>
+              <div className="app__testimonials-btn-left2"
+                onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
+                <HiChevronLeft />
+              </div>
+              <NavigationDots/>
+              <div className="app__testimonials-btn-right2" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
+              <HiChevronRight />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -100,4 +108,4 @@ const Testimonials = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Testimonials,'app__testimonials'),'Testimonials');
+export default AppWrap(MotionWrap(Testimonials,/* 'app__testimonials' */),'Testimonials');

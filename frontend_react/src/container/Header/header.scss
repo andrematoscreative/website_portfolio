@@ -1,47 +1,65 @@
-#Home {
-    position: relative;
-    background: url('../../assets/header_background_2.png');
-    background-size: cover;
-    background-position: center;
-    
-}
-
 .app__header {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
   user-select: none;
+  animation: animateBackground 40s linear infinite alternate;
+  background: url('../../assets/header_background_1.png');
+  background-size: cover;
+  background-position: center;
+}
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .app__header-info {
   min-height: 100vh;
-  margin-left: 100px;
+  margin-left: 150px;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   z-index: 2;
+  width:440px;
   
-  @media screen and (max-width: 1200px) {
-    margin-left: 20px;
+  @media screen and (max-width: 900px) {
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-left: 1rem;
   }
 }
 
 .app__header-head-text {
-  margin-bottom: 60px;
-  font-size: 5rem;
+  margin-bottom: 40px;
+  line-height: 6rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: left;
   color: var(--lightblue-color);
   font-family: var(--font-secondary);
   user-select: none;
 
-  @media screen and (max-width: 450px) {
-    margin-bottom: 30px;
-    font-size: 4rem;
+  @media screen and (max-width: 750px) {
+    font-size: 3rem;
+    line-height: 5rem;
+    width:400px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+    width:250px;
+    line-height: 3rem;
   }
 }
+
 
 .app__header-description {
     display: flex;
@@ -54,10 +72,14 @@
     visibility: hidden;
 
     &-text1 {
-      font-size: 2rem;
-      color: var(--darkgreen-color);
-      margin-bottom: 32px;
+      font-size: 1.8rem;
+      color: var(--lightblue-color);
+      margin-bottom: 24px;
       animation: textAnimation 3s forwards 3.8s;
+
+      @media screen and (max-width: 744px) {
+        font-size: 1.5rem;
+      }
 
       @media screen and (max-width: 450px) {
         font-size: 1.3rem;
@@ -66,11 +88,15 @@
     }
 
     &-text2 {
-      font-size: 2rem;
-      color: var(--darkgreen-color);
-      margin-bottom: 32px;
+      font-size: 1.8rem;
+      color: var(--lightblue-color);
+      margin-bottom: 24px;
       animation: textAnimation 3s forwards 4.2s;
-      
+
+      @media screen and (max-width: 744px) {
+        font-size: 1.5rem;
+      }
+
       @media screen and (max-width: 450px) {
         font-size: 1.3rem;
         margin-bottom: 15px;
@@ -78,10 +104,14 @@
     }
 
     &-text3 {
-      font-size: 2rem;
-      color: var(--darkgreen-color);
-      margin-bottom: 32px;
+      font-size: 1.7rem;
+      color: var(--lightblue-color);
+      margin-bottom: 24px;
       animation: textAnimation 3s forwards 4.6s;
+
+      @media screen and (max-width: 744px) {
+        font-size: 1.5rem;
+      }
 
       @media screen and (max-width: 450px) {
         font-size: 1.3rem;
@@ -102,7 +132,7 @@
 }
 
 .blink {
-  font-size: 2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-align: left;
   color: var(--lightblue-color);
@@ -113,18 +143,18 @@
   animation-delay: 7s;
 
   @media screen and (max-width: 450px) {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 }
 
 @keyframes blink {
   0% {
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
   }
   100% {
     opacity: 1;
-    visibility: visible;
+    visibility: hidden;
   }
 }
 

@@ -4,10 +4,10 @@ import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import header from './header.scss';
 
-const Header = () => {
+  const Header = () => {
   const [text, setText] = useState("")
-  const [fullText, setFullText] = useState(
-    "Hello World, I'm a"
+  const [fullText] = useState(
+    "Hello World    I'm a"
   )
   const [index, setIndex] = useState(0)
   useEffect(() => {
@@ -18,15 +18,15 @@ const Header = () => {
       }, 170)
     }
   }, [index])
-  return (
+    return (
 
-  <div className='app__header app__flex'>
+  <div className='app__header'>
     <div className='app__master-container'>
       <div className='app__header-info'>
         <motion.div
         whileInView={{  opacity: [0,1] }}
         transition={{ duration: 1 }}
-        className='app__header-head-text app__flex'>{text}
+        className='app__header-head-text'>{text}
         </motion.div>
 
         <div className='app__header-description'>

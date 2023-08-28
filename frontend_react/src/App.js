@@ -1,23 +1,20 @@
 import React from 'react';
-/* import { SocialMedia } from './components'; */
-import { About,Contact,Header,Skills,Works,Testimonials,Footer } from './container';
-import { Navbar } from './components';
-
-
+import { Navbar,About,Contact,Header,Skills,Works,Testimonials,Footer } from './container';
 import './app.scss';
-
-
 
 export const App = () => {
   return (
     <div className='app'>
         <Navbar />
         <Header />
+      <div className='app__background'>
+
         <About />
         <Works />
         <Skills />
         <Testimonials />
         <Contact />
+      </div>
         <Footer />
     </div>
   );

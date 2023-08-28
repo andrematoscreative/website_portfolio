@@ -25,7 +25,7 @@ const Skills = () => {
             <motion.div
             whileInView={{ x: [-100, 0], opacity: [0,1] }}
             transition={{ duration: 1 }}
-            className='app__Skills-title-title'>my skills
+            className='app__Skills-title-title'>&lt;skills/&gt;
             </motion.div>
 
             <motion.div
@@ -62,4 +62,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, 'Skills');
+export default AppWrap(MotionWrap(Skills),'Skills');
